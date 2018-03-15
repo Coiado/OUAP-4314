@@ -10,7 +10,7 @@ def deleteEspChar(message):
 def domaine(message):
     array = message.split('.')
     del(array[0])
-    mesEnd = ''.join(array).split('/')
+    mesEnd = '.'.join(array).split('/')
     return mesEnd[0]
  	
 r = RequestHTTP("http://www.esiee.fr/")
